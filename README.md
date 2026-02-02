@@ -26,42 +26,20 @@ Berdasarkan pengujian pada data riil yang tidak seimbang (*imbalanced test set*)
 | CNN Baseline | 99.00% | 68.03% | 99.05% |
 | LSTM Network | 95.00% | 38.52% | 95.14% |
 
-> 
-> **Analisis:** EEGNet secara signifikan mengungguli model lain karena kemampuannya mengekstraksi fitur spasial dan temporal secara efisien dengan parameter yang lebih sedikit.
-> 
-> 
+**Analisis:** EEGNet secara signifikan mengungguli model lain karena kemampuannya mengekstraksi fitur spasial dan temporal secara efisien dengan parameter yang lebih sedikit.
+
 
 ## ⚙️ Metodologi
 
-* 
-**Dataset:** CHB-MIT Scalp EEG Database.
-
-
+* **Dataset:** CHB-MIT Scalp EEG Database.
 * **Preprocessing:**
-* 
-*Downsampling* dari 256 Hz ke 128 Hz untuk efisiensi komputasi.
-
-
-* Segmentasi jendela 8 detik dengan *overlap* 50% (4 detik).
-
-
-* Montage bipolar 18 saluran untuk mengurangi *noise*.
-
-
-
-
+  *Downsampling* dari 256 Hz ke 128 Hz untuk efisiensi komputasi.
+  * Segmentasi jendela 8 detik dengan *overlap* 50% (4 detik).
+  * * Montage bipolar 18 saluran untuk mengurangi *noise*.
 * **Strategi Penanganan Data:**
-* 
-**Training:** Menggunakan *under-sampling* (100% seizure, 1% normal) untuk menyeimbangkan kelas.
-
-
-* 
-**Testing:** Menggunakan data asli yang tidak seimbang untuk mensimulasikan skenario klinis nyata.
-
-
-* 
-**Cross-Validation:** Skema *Leave-Subject-Out* untuk memastikan generalisasi model pada pasien baru.
-
+  * **Training:** Menggunakan *under-sampling* (100% seizure, 1% normal) untuk menyeimbangkan kelas.
+  * **Testing:** Menggunakan data asli yang tidak seimbang untuk mensimulasikan skenario klinis nyata.
+  *  **Cross-Validation:** Skema *Leave-Subject-Out* untuk memastikan generalisasi model pada pasien baru.
 
 
 
@@ -84,16 +62,12 @@ Berdasarkan pengujian pada data riil yang tidak seimbang (*imbalanced test set*)
 
 ## 📝 Kontributor
 
-* 
-**Rafif Fawwaz Kartika** - [5054231009@student.its.ac.id](mailto:5054231009@student.its.ac.id) 
+* **Rafif Fawwaz Kartika** - [5054231009@student.its.ac.id](mailto:5054231009@student.its.ac.id) 
+
+* **Dimas Ahmad Satrio Wicaksono** - [5054231015@student.its.ac.id](mailto:5054231015@student.its.ac.id) 
 
 
-* 
-**Dimas Ahmad Satrio Wicaksono** - [5054231015@student.its.ac.id](mailto:5054231015@student.its.ac.id) 
-
-
-* 
-**Naufal Humam Maulana** - [5054231022@student.its.ac.id](mailto:5054231022@student.its.ac.id) 
+* **Naufal Humam Maulana** - [5054231022@student.its.ac.id](mailto:5054231022@student.its.ac.id) 
 
 
 
