@@ -9,17 +9,11 @@ Proyek ini mengevaluasi performa berbagai arsitektur *Deep Learning* untuk detek
 
 Deteksi kejang secara manual sangat memakan waktu dan rentan terhadap kesalahan. Repositori ini mengimplementasikan pipeline *end-to-end* yang mengubah sinyal EEG mentah menjadi spektrogram waktu-frekuensi menggunakan **STFT** dan mengklasifikasikannya menggunakan tiga arsitektur utama:
 
-1. 
-**2D-CNN (Baseline):** Mengekstraksi fitur spasial dari spektrogram seperti gambar statis.
+1. **2D-CNN (Baseline):** Mengekstraksi fitur spasial dari spektrogram seperti gambar statis.
 
+2. **LSTM:** Model sekuensial yang dirancang untuk menangkap dinamika temporal dan evolusi jangka panjang dari aktivitas otak.
 
-2. 
-**LSTM:** Model sekuensial yang dirancang untuk menangkap dinamika temporal dan evolusi jangka panjang dari aktivitas otak.
-
-
-3. 
-**EEGNet (Specialized):** Arsitektur CNN kompak yang dioptimalkan khusus untuk sinyal EEG menggunakan *depthwise* dan *separable convolutions*.
-
+3. **EEGNet (Specialized):** Arsitektur CNN kompak yang dioptimalkan khusus untuk sinyal EEG menggunakan *depthwise* dan *separable convolutions*.
 
 
 ## 📊 Hasil Eksperimen
@@ -81,14 +75,10 @@ Berdasarkan pengujian pada data riil yang tidak seimbang (*imbalanced test set*)
 
 ## 🚀 Cara Penggunaan
 
-1. **Persiapan Data:** Unduh dataset CHB-MIT dan simpan dalam direktori `data/`.
-2. 
-**Preprocessing:** Jalankan skrip pemrosesan untuk menghasilkan spektrogram dan menangani batching memori.
-
-
+1.  **Persiapan Data:** Unduh dataset CHB-MIT dan simpan dalam direktori `data/`.
+2. **Preprocessing:** Jalankan skrip pemrosesan untuk menghasilkan spektrogram dan menangani batching memori.
 3. **Training:** Jalankan `train.py` dengan memilih model (`cnn`, `lstm`, atau `eegnet`).
-4. 
-**Evaluasi:** Gunakan `evaluate.py` untuk melihat metrik performa dan visualisasi *flickering smoothing*.
+4. **Evaluasi:** Gunakan `evaluate.py` untuk melihat metrik performa dan visualisasi *flickering smoothing*.
 
 
 
