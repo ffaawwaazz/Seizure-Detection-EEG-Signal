@@ -35,7 +35,7 @@ Berdasarkan pengujian pada data riil yang tidak seimbang (*imbalanced test set*)
 * **Preprocessing:**
   *Downsampling* dari 256 Hz ke 128 Hz untuk efisiensi komputasi.
   * Segmentasi jendela 8 detik dengan *overlap* 50% (4 detik).
-  * * Montage bipolar 18 saluran untuk mengurangi *noise*.
+  * Montage bipolar 18 saluran untuk mengurangi *noise*.
 * **Strategi Penanganan Data:**
   * **Training:** Menggunakan *under-sampling* (100% seizure, 1% normal) untuk menyeimbangkan kelas.
   * **Testing:** Menggunakan data asli yang tidak seimbang untuk mensimulasikan skenario klinis nyata.
